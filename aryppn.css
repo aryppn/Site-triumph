@@ -1,33 +1,35 @@
-#t1 {
-    font-size: 70px;
-    font-weight: 800;
-    text-align: center;
+.logo1 {
+    width: 100px;
 
-    background: linear-gradient(90deg, #ffffff, #06b6d4);
-    -webkit-background-clip: text;
-    font-family: "Inter";
-    -webkit-text-fill-color: transparent;
-    font-size: clamp(48px, 8vw, 90px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -4px;
+}
+
+.logo {
+  width: 300px;
+  align-self: center;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+
 }
 
 .container {
     width: 100vw;
-    display: flex;
-    padding: 10px;
-    gap: 8px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 0; 
+    justify-items: center;
 }
 
 .card {
     width: 300px;
     display: flex;
-    gap: 8px;
     flex-direction: column;
+    gap: 8px;
     background-color: gray;
     border: 3px solid;
     border-radius: 8px;
@@ -69,7 +71,5 @@ a {
 nav {
     margin-top: 10px;
 }
-header {
-    background-color: black;
-}
+
 
